@@ -1,0 +1,1454 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20193.19.0821.2225                               -->
+<workbook original-version='18.1' source-build='2019.3.0 (20193.19.0821.2225)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='all_results(all_results)' inline='true' name='federated.0adkuld1f8gaen1cep8o71a4eqob' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='all_results' name='excel-direct.0nzjgi70eyp6r91apgn6013df5i9'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='H:/OneDrive - The Hong Kong Polytechnic University/Algotrade/Backtest/Stock_BackTest/Ideas/Meanreversion_2_box3_4/all_results.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0nzjgi70eyp6r91apgn6013df5i9' name='all_results' table='[all_results$]' type='table'>
+          <columns gridOrigin='A1:AF497:no:A1:AF497:0' header='yes' outcome='6'>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='date' name='Start' ordinal='1' />
+            <column datatype='date' name='End' ordinal='2' />
+            <column datatype='string' name='Duration' ordinal='3' />
+            <column datatype='real' name='Exposure Time (%)' ordinal='4' />
+            <column datatype='real' name='Equity Final ($)' ordinal='5' />
+            <column datatype='real' name='Equity Peak ($)' ordinal='6' />
+            <column datatype='real' name='Return (%)' ordinal='7' />
+            <column datatype='real' name='Buy &amp; Hold Return (%)' ordinal='8' />
+            <column datatype='real' name='Return (Ann.) (%)' ordinal='9' />
+            <column datatype='real' name='Volatility (Ann.) (%)' ordinal='10' />
+            <column datatype='real' name='Sharpe Ratio' ordinal='11' />
+            <column datatype='real' name='Sortino Ratio' ordinal='12' />
+            <column datatype='real' name='Calmar Ratio' ordinal='13' />
+            <column datatype='real' name='Max. Drawdown (%)' ordinal='14' />
+            <column datatype='real' name='Avg. Drawdown (%)' ordinal='15' />
+            <column datatype='string' name='Max. Drawdown Duration' ordinal='16' />
+            <column datatype='string' name='Avg. Drawdown Duration' ordinal='17' />
+            <column datatype='integer' name='# Trades' ordinal='18' />
+            <column datatype='real' name='Win Rate (%)' ordinal='19' />
+            <column datatype='real' name='Best Trade (%)' ordinal='20' />
+            <column datatype='real' name='Worst Trade (%)' ordinal='21' />
+            <column datatype='real' name='Avg. Trade (%)' ordinal='22' />
+            <column datatype='string' name='Max. Trade Duration' ordinal='23' />
+            <column datatype='string' name='Avg. Trade Duration' ordinal='24' />
+            <column datatype='real' name='Profit Factor' ordinal='25' />
+            <column datatype='real' name='Expectancy (%)' ordinal='26' />
+            <column datatype='real' name='SQN' ordinal='27' />
+            <column datatype='string' name='_strategy' ordinal='28' />
+            <column datatype='string' name='_equity_curve' ordinal='29' />
+            <column datatype='string' name='_trades' ordinal='30' />
+            <column datatype='string' name='Sector' ordinal='31' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RHK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Start]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Start</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>End</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[End]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>End</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Duration</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Duration]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Duration</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RHK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exposure Time (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Exposure Time (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Exposure Time (%)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Equity Final ($)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Equity Final ($)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Equity Final ($)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Equity Peak ($)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Equity Peak ($)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Equity Peak ($)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Return (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Return (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Return (%)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Buy &amp; Hold Return (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Buy &amp; Hold Return (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Buy &amp; Hold Return (%)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Return (Ann.) (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Return (Ann.) (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Return (Ann.) (%)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Volatility (Ann.) (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Volatility (Ann.) (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Volatility (Ann.) (%)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sharpe Ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sharpe Ratio]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Sharpe Ratio</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sortino Ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sortino Ratio]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Sortino Ratio</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Calmar Ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Calmar Ratio]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Calmar Ratio</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max. Drawdown (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Max. Drawdown (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Max. Drawdown (%)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg. Drawdown (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg. Drawdown (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Avg. Drawdown (%)</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max. Drawdown Duration</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Max. Drawdown Duration]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Max. Drawdown Duration</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RHK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg. Drawdown Duration</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Avg. Drawdown Duration]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Avg. Drawdown Duration</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RHK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name># Trades</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[# Trades]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias># Trades</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Win Rate (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Win Rate (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Win Rate (%)</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Best Trade (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Best Trade (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Best Trade (%)</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Worst Trade (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Worst Trade (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Worst Trade (%)</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg. Trade (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg. Trade (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Avg. Trade (%)</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max. Trade Duration</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Max. Trade Duration]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Max. Trade Duration</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RHK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg. Trade Duration</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Avg. Trade Duration]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Avg. Trade Duration</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RHK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit Factor</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Profit Factor]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Profit Factor</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Expectancy (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Expectancy (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Expectancy (%)</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SQN</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SQN]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>SQN</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_strategy</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[_strategy]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>_strategy</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RHK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_equity_curve</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[_equity_curve]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>_equity_curve</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RHK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_trades</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[_trades]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>_trades</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RHK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sector</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sector]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Sector</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RHK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AF497:no:A1:AF497:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[Avg. Trade (%)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Buy &amp; Hold Return (%)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Equity Final ($)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column-instance column='[Avg. Trade (%)]' derivation='Avg' name='[avg:Avg. Trade (%):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Buy &amp; Hold Return (%)]' derivation='Avg' name='[avg:Buy &amp; Hold Return (%):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Equity Final ($)]' derivation='Avg' name='[avg:Equity Final ($):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Avg. Trade (%)]' derivation='Sum' name='[sum:Avg. Trade (%):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Buy &amp; Hold Return (%)]' derivation='Sum' name='[sum:Buy &amp; Hold Return (%):qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.376471' measure-ordering='alphabetic' measure-percentage='0.623529' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0adkuld1f8gaen1cep8o71a4eqob].[avg:Avg. Trade (\%):qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0adkuld1f8gaen1cep8o71a4eqob].[avg:Equity Final ($):qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0adkuld1f8gaen1cep8o71a4eqob].[sum:Avg. Trade (\%):qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1yggr6u0m9dcv1124qr9e0hfr960].[avg:Return (\%):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1yggr6u0m9dcv1124qr9e0hfr960].[sum:Return (\%):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0adkuld1f8gaen1cep8o71a4eqob].[avg:Buy &amp; Hold Return (\%):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0adkuld1f8gaen1cep8o71a4eqob].[sum:Buy &amp; Hold Return (\%):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0adkuld1f8gaen1cep8o71a4eqob].[usr:Calculation_1321243581938618368:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0adkuld1f8gaen1cep8o71a4eqob].[usr:Calculation_1321243581938749441:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Hong Kong&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='federated.1yggr6u0m9dcv1124qr9e0hfr960'>
+        <column datatype='real' name='[Return (%)]' role='measure' type='quantitative' />
+        <column-instance column='[Return (%)]' derivation='Avg' name='[avg:Return (%):qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Return (%)]' derivation='Sum' name='[sum:Return (%):qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+    </datasource>
+    <datasource caption='all_results(all_results) (2)' inline='true' name='federated.1yggr6u0m9dcv1124qr9e0hfr960' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='all_results' name='excel-direct.1njwiw20skxck81981klp0p93zil'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='H:/OneDrive - The Hong Kong Polytechnic University/Algotrade/Backtest/Stock_BackTest/Ideas/Meanreversion_2_box3_4/all_results.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1njwiw20skxck81981klp0p93zil' name='all_results' table='[all_results$]' type='table'>
+          <columns gridOrigin='A1:AF497:no:A1:AF497:0' header='yes' outcome='6'>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='date' name='Start' ordinal='1' />
+            <column datatype='date' name='End' ordinal='2' />
+            <column datatype='string' name='Duration' ordinal='3' />
+            <column datatype='real' name='Exposure Time (%)' ordinal='4' />
+            <column datatype='real' name='Equity Final ($)' ordinal='5' />
+            <column datatype='real' name='Equity Peak ($)' ordinal='6' />
+            <column datatype='real' name='Return (%)' ordinal='7' />
+            <column datatype='real' name='Buy &amp; Hold Return (%)' ordinal='8' />
+            <column datatype='real' name='Return (Ann.) (%)' ordinal='9' />
+            <column datatype='real' name='Volatility (Ann.) (%)' ordinal='10' />
+            <column datatype='real' name='Sharpe Ratio' ordinal='11' />
+            <column datatype='real' name='Sortino Ratio' ordinal='12' />
+            <column datatype='real' name='Calmar Ratio' ordinal='13' />
+            <column datatype='real' name='Max. Drawdown (%)' ordinal='14' />
+            <column datatype='real' name='Avg. Drawdown (%)' ordinal='15' />
+            <column datatype='string' name='Max. Drawdown Duration' ordinal='16' />
+            <column datatype='string' name='Avg. Drawdown Duration' ordinal='17' />
+            <column datatype='integer' name='# Trades' ordinal='18' />
+            <column datatype='real' name='Win Rate (%)' ordinal='19' />
+            <column datatype='real' name='Best Trade (%)' ordinal='20' />
+            <column datatype='real' name='Worst Trade (%)' ordinal='21' />
+            <column datatype='real' name='Avg. Trade (%)' ordinal='22' />
+            <column datatype='string' name='Max. Trade Duration' ordinal='23' />
+            <column datatype='string' name='Avg. Trade Duration' ordinal='24' />
+            <column datatype='real' name='Profit Factor' ordinal='25' />
+            <column datatype='real' name='Expectancy (%)' ordinal='26' />
+            <column datatype='real' name='SQN' ordinal='27' />
+            <column datatype='string' name='_strategy' ordinal='28' />
+            <column datatype='string' name='_equity_curve' ordinal='29' />
+            <column datatype='string' name='_trades' ordinal='30' />
+            <column datatype='string' name='Sector' ordinal='31' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RHK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Start]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Start</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>End</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[End]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>End</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Duration</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Duration]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Duration</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RHK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exposure Time (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Exposure Time (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Exposure Time (%)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Equity Final ($)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Equity Final ($)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Equity Final ($)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Equity Peak ($)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Equity Peak ($)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Equity Peak ($)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Return (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Return (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Return (%)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Buy &amp; Hold Return (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Buy &amp; Hold Return (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Buy &amp; Hold Return (%)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Return (Ann.) (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Return (Ann.) (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Return (Ann.) (%)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Volatility (Ann.) (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Volatility (Ann.) (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Volatility (Ann.) (%)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sharpe Ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sharpe Ratio]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Sharpe Ratio</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sortino Ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sortino Ratio]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Sortino Ratio</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Calmar Ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Calmar Ratio]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Calmar Ratio</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max. Drawdown (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Max. Drawdown (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Max. Drawdown (%)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg. Drawdown (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg. Drawdown (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Avg. Drawdown (%)</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max. Drawdown Duration</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Max. Drawdown Duration]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Max. Drawdown Duration</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RHK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg. Drawdown Duration</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Avg. Drawdown Duration]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Avg. Drawdown Duration</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RHK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name># Trades</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[# Trades]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias># Trades</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Win Rate (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Win Rate (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Win Rate (%)</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Best Trade (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Best Trade (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Best Trade (%)</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Worst Trade (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Worst Trade (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Worst Trade (%)</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg. Trade (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg. Trade (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Avg. Trade (%)</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max. Trade Duration</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Max. Trade Duration]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Max. Trade Duration</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RHK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg. Trade Duration</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Avg. Trade Duration]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Avg. Trade Duration</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RHK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit Factor</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Profit Factor]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Profit Factor</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Expectancy (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Expectancy (%)]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Expectancy (%)</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SQN</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SQN]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>SQN</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_strategy</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[_strategy]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>_strategy</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RHK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_equity_curve</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[_equity_curve]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>_equity_curve</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RHK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_trades</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[_trades]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>_trades</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RHK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sector</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sector]</local-name>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias>Sector</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RHK_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[all_results]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AF497:no:A1:AF497:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.376471' measure-ordering='alphabetic' measure-percentage='0.623529' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Hong Kong&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='工作表 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_results(all_results)' name='federated.0adkuld1f8gaen1cep8o71a4eqob' />
+            <datasource caption='all_results(all_results) (2)' name='federated.1yggr6u0m9dcv1124qr9e0hfr960' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0adkuld1f8gaen1cep8o71a4eqob'>
+            <column datatype='real' name='[Buy &amp; Hold Return (%)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Sector]' role='dimension' type='nominal' />
+            <column-instance column='[Buy &amp; Hold Return (%)]' derivation='Avg' name='[avg:Buy &amp; Hold Return (%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sector]' derivation='None' name='[none:Sector:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1yggr6u0m9dcv1124qr9e0hfr960'>
+            <column datatype='real' name='[Return (%)]' role='measure' type='quantitative' />
+            <column-instance column='[Return (%)]' derivation='Avg' name='[avg:Return (%):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0adkuld1f8gaen1cep8o71a4eqob].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1yggr6u0m9dcv1124qr9e0hfr960].[avg:Return (\%):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0adkuld1f8gaen1cep8o71a4eqob].[avg:Buy &amp; Hold Return (\%):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0adkuld1f8gaen1cep8o71a4eqob].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1yggr6u0m9dcv1124qr9e0hfr960].[avg:Return (\%):qk]&quot;</bucket>
+              <bucket>&quot;[federated.0adkuld1f8gaen1cep8o71a4eqob].[avg:Buy &amp; Hold Return (\%):qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0adkuld1f8gaen1cep8o71a4eqob].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0adkuld1f8gaen1cep8o71a4eqob].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0adkuld1f8gaen1cep8o71a4eqob].[Multiple Values]</rows>
+        <cols>([federated.0adkuld1f8gaen1cep8o71a4eqob].[none:Sector:nk] / [federated.0adkuld1f8gaen1cep8o71a4eqob].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{6A012B1E-BFF2-4B12-9B8E-74608169A057}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='工作表 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='262'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='39'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0adkuld1f8gaen1cep8o71a4eqob].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0adkuld1f8gaen1cep8o71a4eqob].[:Measure Names]</field>
+            <field>[federated.0adkuld1f8gaen1cep8o71a4eqob].[none:F1:nk]</field>
+            <field>[federated.0adkuld1f8gaen1cep8o71a4eqob].[none:Sector:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D68BFFDC-5114-4FAA-A938-B34D092BC7DC}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='工作表 1' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>

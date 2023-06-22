@@ -1,0 +1,30 @@
+Start                                                                   0.0
+End                                                                  2650.0
+Duration                                                             2650.0
+Exposure Time [%]                                                 51.716333
+Equity Final [$]                                               14656.085358
+Equity Peak [$]                                                24015.750381
+Return [%]                                                        12.739118
+Buy & Hold Return [%]                                            222.898795
+Return (Ann.) [%]                                                       0.0
+Volatility (Ann.) [%]                                                   NaN
+Sharpe Ratio                                                            NaN
+Sortino Ratio                                                           NaN
+Calmar Ratio                                                            0.0
+Max. Drawdown [%]                                                -38.973028
+Avg. Drawdown [%]                                                 -4.371399
+Max. Drawdown Duration                                                638.0
+Avg. Drawdown Duration                                            54.659091
+# Trades                                                               31.0
+Win Rate [%]                                                      22.580645
+Best Trade [%]                                                    30.001713
+Worst Trade [%]                                                   -4.208417
+Avg. Trade [%]                                                     0.383014
+Max. Trade Duration                                                   205.0
+Avg. Trade Duration                                               43.870968
+Profit Factor                                                      1.268279
+Expectancy [%]                                                     0.735712
+SQN                                                                0.213899
+_strategy                                                     MeanReversion
+_equity_curve                         Equity  DrawdownPct  DrawdownDurat...
+_trades                       Size  EntryBar  ExitBar  EntryPrice   Exit...
